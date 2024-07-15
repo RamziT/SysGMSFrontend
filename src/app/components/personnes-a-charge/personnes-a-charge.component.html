@@ -1,0 +1,28 @@
+<div>
+  <h2>Personnes à charge</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Date de naissance</th>
+        <th>Mutualiste Associé</th>
+        <th>Affiliation</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let personne_a_charge of personnes_a_charge">
+        <td></td>
+        <td>{{ personne_a_charge.nomAssure }}</td>
+        <td>{{ personne_a_charge.prenomAssure }}</td>
+        <td>{{ personne_a_charge.dateNaissanceAssure }}</td>
+        <td>{{ personne_a_charge.mutualisteAssocie }}</td>
+        <td>{{ personne_a_charge.affilliationPAC }}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

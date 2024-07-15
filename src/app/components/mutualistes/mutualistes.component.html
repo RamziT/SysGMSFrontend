@@ -1,0 +1,31 @@
+<div>
+  <h2>Mutualistes</h2>
+  <table class="table table-striped mt-3">
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Matricule</th>
+        <th>Categorie</th>
+        <th>Nombre de PAC</th>
+        <th>Cumul des dépenses</th>
+        <th>Statut</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mutualiste of mutualistes">
+        <td></td>
+        <td>{{ mutualiste.nomAssure }}</td>
+        <td>{{ mutualiste.prenomAssure }}</td>
+        <td>{{ mutualiste.matriculeMutualiste }}</td>
+        <td>{{ mutualiste.categorieMutualiste }}</td>
+        <td>{{ mutualiste.personnes_a_charge }}</td>
+        <td>{{ mutualiste.depensesSante }}</td>
+        <td>{{ mutualiste.statutAssure }}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

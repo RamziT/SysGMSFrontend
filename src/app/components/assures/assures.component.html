@@ -1,0 +1,27 @@
+<div>
+  <h2>Assurés</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Date de Naissance</th>
+        <th>Sexe</th>
+        <th>Téléphone</th>
+        <th>Adresse</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let assure of assures">
+        <td>{{ assure.nomAssure }}</td>
+        <td>{{ assure.prenomAssure }}</td>
+        <td>{{ assure.dateNaissanceAssure }}</td>
+        <td>{{ assure.sexeAssure }}</td>
+        <td>{{ assure.telephoneAssure }}</td>
+        <td>{{ assure.adresseAssure }}</td>
+        <td>{{ assure.statutAssure }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
